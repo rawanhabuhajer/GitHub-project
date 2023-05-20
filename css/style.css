@@ -118,7 +118,7 @@ margin: 3% 10%;
     display: grid;
     gap: 1rem;
     align-items: end;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
    
 }
 #avatar img{
@@ -407,6 +407,8 @@ background-color: #ffffff;
       main {
         display: block;
         margin: 10% 10%;
+        height: 10px;
+     
         }
         #follow{
             width: 160%;
@@ -453,7 +455,7 @@ margin-top: 1rem;
    }
    .box-container{
     width: 100%;
-    margin-top: 30px;
+    margin-top: 1px;
 }
 /* .test{
     display: grid;
@@ -477,4 +479,14 @@ margin-top: 1rem;
     margin-top: 67px;
     margin-left: 5px;
 }
+header img {
+    width: 30px;
+    height: 30px;
+   }
+    .menu img{
+        display: none;
+    }
+    .menu  {
+        margin-left:3rem;
+    }
 }

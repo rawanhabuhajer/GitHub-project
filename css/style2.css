@@ -12,6 +12,7 @@ body {
 header{
     display: flex;
     justify-content: space-between;
+    gap: 30px;
     background-color: #161b22;
     height: 60px; 
     width: 100%;
@@ -89,13 +90,17 @@ nav a{
     text-decoration: none;
     color: #fff;
 }
-
+#the-winner{
+    text-align: center;
+    margin-top: 15px;
+    
+}
 #container{
     width:100%;
     max-width: 980px;
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr ;
-    margin: 15px auto 0px auto;
+    margin: 0px auto 0px auto;
     background-color: #f4f7ff;
     height:600px;
   
@@ -210,13 +215,23 @@ background-color: #161b22;
 
 #playerOneResult{
     text-align: center;
+
 }
 #playerTwoResult{
     text-align: center;
 }
 
 @media (max-width: 600px) {
-   
+   header img {
+    width: 30px;
+    height: 30px;
+   }
+   .menu img{
+    display: none;
+}
+.menu  {
+    margin-left:3rem;
+}
 #container{
     width:100%;
     max-width: 980px;
