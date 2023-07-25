@@ -36,7 +36,7 @@ form.addEventListener('submit',function(e) {
 
     console.log(data);
       
-    let containerOne = document.querySelector('#card1');
+    let containerOne = document.querySelector('.box');
         let avatarImg = document.querySelector('.profile_img');
         avatarImg.src = data.avatar_url;
         containerOne.appendChild(avatarImg);
@@ -74,7 +74,7 @@ let form2 = document.querySelector('.player2');
 form2.addEventListener('submit',function(e) {
     e.preventDefault()
 
-    let search2 = document.getElementById('player_name2').value;
+    let search2 = document.getElementById('player__name2').value;
 
     fetch(('https://api.github.com/users/'+search2))
     .then((result) => result.json())
@@ -82,7 +82,7 @@ form2.addEventListener('submit',function(e) {
 
     console.log(data);
       
-    let container2 = document.querySelector('#card2');
+    let container2 = document.querySelector('.box2');
         let avatarImg2 = document.querySelector('.profile_img2');
         avatarImg2.src = data.avatar_url;
         container2.appendChild(avatarImg2);
@@ -114,6 +114,7 @@ form2.addEventListener('submit',function(e) {
 
 let resultBtn = document.getElementById('winner_btn');
 
+
 resultBtn.addEventListener('click', function(e) {
     e.preventDefault()
     
@@ -123,27 +124,31 @@ resultBtn.addEventListener('click', function(e) {
     if (dataOfUer1.public_repos< dataOfUer2.public_repos) {
         
      
-        let result = document.getElementById('playerOneResult');
+        let result = document.getElementById('result_number1');
         result.textContent = 'Loser';
         
 
-        let result2 = document.getElementById('playerTwoResult');
+        let result2 = document.getElementById('result_number2');
         result2.textContent = 'Winner';
+        let card2 = document.querySelector('.card2');
+        card2.style.boxShadow = 'inset 5px 5px 5px rgba(255, 157, 0, 0.2) ,  inset -5px -5px 15px rgba(255, 157, 0, 0.2) ';
     }
-    else if (dataOfUer1.public_repos > dataOfUer2.public_repos) {
-        let result = document.getElementById('playerOneResult');
-        result.textContent = 'Winner';
-       
 
-        let result2 = document.getElementById('playerTwoResult');
+    else if (dataOfUer1.public_repos > dataOfUer2.public_repos) {
+        let result = document.getElementById('result_number1');
+        result.textContent = 'Winner';
+        let card = document.querySelector('.card');
+       card.style.boxShadow = 'inset 5px 5px 5px rgba(255, 157, 0, 0.2),  inset -5px -5px 15px rgba(255, 157, 0, 0.2) ';
+
+        let result2 = document.getElementById('result_number2');
         result2.textContent = 'Loser';
     }
     else {
-        let result = document.getElementById('playerOneResult');
+        let result = document.getElementById('result_number1');
         result.textContent = 'Tie';
         
 
-        let result2 = document.getElementById('playerTwoResult');
+        let result2 = document.getElementById('result_number2');
         result2.textContent = 'Tie';
     }
     }

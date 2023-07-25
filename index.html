@@ -1,112 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GitHub</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
- <!-- -------------- <header> -------------- -->
-    
-        
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- -------------- <header> -------------- -->
+
     <header>
-        <div class="header-div" >
-        <img src="Assets/icons/github.png" alt="github-icon" class="githup-icon" >
-        <form class="search_bar" >
-            <input type="text" placeholder="   search" id="search" style="border-radius: 10px;"> 
-            <button onclick="" type="submit" class="search-button">/</button>
-        </form> 
-        </div>
-        
-        <div class="menu">
-          <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
-          <img src="Assets/icons/home (2).png">
-            <a href="index.html">Home</a>
-            <img src="Assets/icons/trophy.png" alt="">
-            <a href="index2.html">Competition</a>
-   
-        </div>
-        
-        
+      <div class="header-div">
+        <img
+          src="Assets/icons/github.png"
+          alt="github-icon"
+          class="githup-icon"
+        />
+        <form class="search_bar">
+          <input
+            type="text"
+            placeholder="search"
+            id="search"
+            style="border-radius: 10px"
+          />
+          <button onclick="" type="submit" class="search-button">/</button>
+        </form>
+      </div>
 
+      <div class="menu">
+        <img src="Assets/icons/home (2).png" />
+        <a href="index.html">Home</a>
+        <img src="Assets/icons/trophy.png" alt="" />
+        <a href="index2.html">Competition</a>
+      </div>
     </header>
-  
+
     <div id="container">
-        <nav>
-         
-                <a href="#">Overview</a>
-                <a href="#">Repositories</a>
-                <a href="#">Projects</a>
-                <a href="#">Packages</a>
-                <a href="#">Stars</a>
-           
-        </nav>
+      <nav>
+        <a href="#">Overview</a>
+        <a href="#">Repositories</a>
+        <a href="#">Projects</a>
+        <a href="#">Packages</a>
+        <a href="#">Stars</a>
+      </nav>
     </div>
-        <main>
-            <div class="left-main">
-                <div id="avatar">
-                    <img src="Assets/img/bell.png" class="profile_img">
-                    <p class="name">Name</p>
-                    <button id="follow">Follow</button>
-                    </div>
-                
-                    <div id="follow-div" >
-                    
-                    <p class="followers">followers</p>
-                    <p class="following">following</p>
-                </div>
-                <!-- <div class="links">
-                    <a href="" style="color: rgb(152, 152, 152); text-decoration:none;">Achievements</a>
-                </div> -->
-                <!-- <div class="link2">
-                    
-                    <a href="#" style="color: rgb(152, 152, 152); text-decoration:none;">Send feedback</a><br>
-                    <a href="#" style="color: rgb(152, 152, 152); text-decoration:none;">Block or Report</a>
-                </div> -->
-            </div>
-            
-            <div class="box-container">
-                    
-                    <h3>Popular repositories</h3>
-                
-                    <div id="boxes">
-                    
-                   </div> 
-              
-            </div>
+    <main>
+      <div class="left-main">
+        <div id="avatar">
+          <img src="Assets/img/bell.png" class="profile_img" />
+          <p class="name">Username</p>
+          <button id="follow">Follow</button>
+        </div>
 
-        </main>
-    
-    
-    
-    
-    
-    
-    
+        <div id="follow-div">
+          <p class="followers">followers</p>
+          <p class="following">following</p>
+        </div>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        <div class="box-container">
+          <h3>Popular repositories</h3>
+
+          <div id="boxes"></div>
+        </div>
+      </div>
+    </main>
+
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

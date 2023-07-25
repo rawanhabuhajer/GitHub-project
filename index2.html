@@ -1,66 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style2.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style2.css" />
+  </head>
+  <body>
     <header>
-        <div style="display: flex; align-items: center;  margin-left: 50px;" >
-        <img src="Assets/icons/github.png" alt="github-icon" width="40px" height="40px" >
-        </div>
-        
-            <div class="menu">
-                <img src="Assets/icons/home (2).png">
-               <a href="index.html">Home</a>
-               <img src="Assets/icons/trophy.png">
-               <a href="index2.html">Competition</a>
-            </div>
-            
+      <div style="display: flex; align-items: center; margin-left: 50px">
+        <img
+          src="Assets/icons/github.png"
+          alt="github-icon"
+          width="40px"
+          height="40px"
+        />
+      </div>
 
+      <div class="menu">
+        <img src="Assets/icons/home (2).png" />
+        <a href="index.html">Home</a>
+        <img src="Assets/icons/trophy.png" />
+        <a href="index2.html">Competition</a>
+      </div>
     </header>
-      <h1 id="the-winner">Who is the winner ?</h1>
-    <div id="container">
-        <h1 id="playerOneResult"></h1>
-        <div></div>
-        <h1 id="playerTwoResult"></h1>
-        <div id="card1">
-          
-            <img src="" style="width:50%; border-radius: 50%;" class="profile_img">
-            <p class="name" style="margin-top: 10px; font-size: 24px;"></p>
-            <div id="follow-div" >
-                <img src="" alt="">
-                <p class="followers"></p>
-                <p class="following"></p>
-                <p class="reponum"></p>
-            </div>
-        </div>
-<button  type="submit" id="winner_btn">Start</button>
-        
-        <div id="card2">
 
-            <img src="" style="width:50%; border-radius: 50%;" class="profile_img2">
-            <p class="name2" style="margin-top: 10px; font-size: 24px;"></p>
-            <div id="follow-div2" >
-                <img src="" alt="">
-                <p class="followers2"></p>
-                <p class="following2"></p>
-                <p class="reponum2"></p>
+    <h1 id="the-winner">Who is the winner ?</h1>
+    <div class="container">
+      <h1 id="playerOneResult"></h1>
+      <div></div>
+      <h1 id="playerTwoResult"></h1>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h2 id="result_number1"></h2>
+            <img
+              src=""
+              style="width: 40%; border-radius: 50%"
+              class="profile_img"
+            />
+            <p class="name" style="margin-top: 10px; font-size: 24px"></p>
+            <div id="follow-div">
+              <p class="followers"></p>
+              <p class="following"></p>
             </div>
+            <p class="reponum"></p>
+          </div>
         </div>
-        <form class="playerone">
-            <input type="text" id="player_name">
-            <button  type="submit" class="player1_button">search</button>
-        </form>
-        <div></div>
-        <form class="player2">
-            <input type="text" id="player_name2">
-            <button  type="submit" class="player_button2">search</button>
-        </form>
+      </div>
+      <button type="submit" id="winner_btn">Start</button>
+      <div class="card2">
+        <div class="box2">
+          <div class="content2">
+            <h2 id="result_number2"></h2>
+            <img
+              src=""
+              style="width: 40%; border-radius: 50%"
+              class="profile_img2"
+            />
+            <p class="name2" style="margin-top: 10px; font-size: 24px"></p>
+            <div id="follow-div2">
+              <p class="followers2"></p>
+              <p class="following2"></p>
+            </div>
+            <p class="reponum2"></p>
+          </div>
+        </div>
+      </div>
+      <form class="playerone">
+        <input type="text" id="player_name" />
+        <button type="submit" class="player1_button">search</button>
+      </form>
+      <div></div>
+      <form class="player2">
+        <input type="text" id="player__name2" />
+        <button type="submit" class="player_button2">search</button>
+      </form>
     </div>
+
     <script src="js/script2.js"></script>
-</body>
+  </body>
 </html>
